@@ -75,6 +75,13 @@ include = []
 for f in range(15):
     include.append(feat_labels[indices[f]])
 
+# pandas 合并 
+t = pd.concat([t1,t2,t3,t4],axis=0)
+
+# 按照一个 维度进行分组，并统计另一个维度的去重数量；
+r3.groupby('lapass')['serial_id'].nunique()
+
+
 ```
 
 # 待办事项
